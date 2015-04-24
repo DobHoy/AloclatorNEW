@@ -17,6 +17,18 @@
 
 @implementation BLCViewController
 
+- (instancetype) init{
+    self = [super init];
+    
+    if(self) {
+        self.title = NSLocalizedString(@"Wine", @"Wine");
+    }
+    
+    [self.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -18)];
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
@@ -47,7 +59,8 @@
     // Gets rid of the maximum number of lines on the label
     self.resultLabel.numberOfLines = 0;
     
-    self.title = NSLocalizedString(@"Wine", @"wine");
+    self.view.backgroundColor = [UIColor colorWithRed:0.741 green:0.925 blue:0.714 alpha:1];
+    
 }
 - (void)loadView {
     // Allocate and initialize the all-encompassing view
@@ -96,6 +109,7 @@
      self.title = [NSString stringWithFormat:@"%@ (%f glasses)", self.title,sender.value];
      
     [self.beerPercentTextField resignFirstResponder];
+     [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
 }
 
  - (void)buttonPressed:(UIButton *)sender {

@@ -10,7 +10,7 @@
 		9C9BF5AC1AE69ADF001B816C /* BLCWhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BF5AB1AE69ADF001B816C /* BLCWhiskeyViewController.m */; };
 		9C9BF5AF1AE6D787001B816C /* BLCMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BF5AE1AE6D787001B816C /* BLCMainMenuViewController.m */; };
 		9CAE00BC1AE66A7E00317B78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE00BB1AE66A7E00317B78 /* main.m */; };
-		9CAE00BF1AE66A7E00317B78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE00BE1AE66A7E00317B78 /* AppDelegate.m */; };
+		9CAE00BF1AE66A7E00317B78 /* BLCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE00BE1AE66A7E00317B78 /* BLCAppDelegate.m */; };
 		9CAE00C21AE66A7E00317B78 /* BLCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE00C11AE66A7E00317B78 /* BLCViewController.m */; };
 		9CAE00C71AE66A7E00317B78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CAE00C61AE66A7E00317B78 /* Images.xcassets */; };
 		9CAE00CA1AE66A7E00317B78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CAE00C81AE66A7E00317B78 /* LaunchScreen.xib */; };
@@ -35,8 +35,8 @@
 		9CAE00B61AE66A7E00317B78 /* AlcolatorNEW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcolatorNEW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CAE00BA1AE66A7E00317B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CAE00BB1AE66A7E00317B78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9CAE00BD1AE66A7E00317B78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9CAE00BE1AE66A7E00317B78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9CAE00BD1AE66A7E00317B78 /* BLCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLCAppDelegate.h; sourceTree = "<group>"; };
+		9CAE00BE1AE66A7E00317B78 /* BLCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLCAppDelegate.m; sourceTree = "<group>"; };
 		9CAE00C01AE66A7E00317B78 /* BLCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLCViewController.h; sourceTree = "<group>"; };
 		9CAE00C11AE66A7E00317B78 /* BLCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLCViewController.m; sourceTree = "<group>"; };
 		9CAE00C61AE66A7E00317B78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -85,13 +85,13 @@
 		9CAE00B81AE66A7E00317B78 /* AlcolatorNEW */ = {
 			isa = PBXGroup;
 			children = (
-				9CAE00BD1AE66A7E00317B78 /* AppDelegate.h */,
-				9CAE00BE1AE66A7E00317B78 /* AppDelegate.m */,
-				9CAE00C01AE66A7E00317B78 /* BLCViewController.h */,
+				9CAE00BD1AE66A7E00317B78 /* BLCAppDelegate.h */,
+				9CAE00BE1AE66A7E00317B78 /* BLCAppDelegate.m */,
 				9C9BF5AD1AE6D787001B816C /* BLCMainMenuViewController.h */,
 				9C9BF5AE1AE6D787001B816C /* BLCMainMenuViewController.m */,
 				9C9BF5AA1AE69ADF001B816C /* BLCWhiskeyViewController.h */,
 				9C9BF5AB1AE69ADF001B816C /* BLCWhiskeyViewController.m */,
+				9CAE00C01AE66A7E00317B78 /* BLCViewController.h */,
 				9CAE00C11AE66A7E00317B78 /* BLCViewController.m */,
 				9CAE00C61AE66A7E00317B78 /* Images.xcassets */,
 				9CAE00C81AE66A7E00317B78 /* LaunchScreen.xib */,
@@ -228,7 +228,7 @@
 				9CAE00C21AE66A7E00317B78 /* BLCViewController.m in Sources */,
 				9C9BF5AF1AE6D787001B816C /* BLCMainMenuViewController.m in Sources */,
 				9C9BF5AC1AE69ADF001B816C /* BLCWhiskeyViewController.m in Sources */,
-				9CAE00BF1AE66A7E00317B78 /* AppDelegate.m in Sources */,
+				9CAE00BF1AE66A7E00317B78 /* BLCAppDelegate.m in Sources */,
 				9CAE00BC1AE66A7E00317B78 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
