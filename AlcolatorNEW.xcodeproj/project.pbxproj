@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C9BF5AC1AE69ADF001B816C /* BLCWhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BF5AB1AE69ADF001B816C /* BLCWhiskeyViewController.m */; };
+		9C9BF5AF1AE6D787001B816C /* BLCMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BF5AE1AE6D787001B816C /* BLCMainMenuViewController.m */; };
 		9CAE00BC1AE66A7E00317B78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE00BB1AE66A7E00317B78 /* main.m */; };
 		9CAE00BF1AE66A7E00317B78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE00BE1AE66A7E00317B78 /* AppDelegate.m */; };
 		9CAE00C21AE66A7E00317B78 /* BLCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE00C11AE66A7E00317B78 /* BLCViewController.m */; };
-		9CAE00C51AE66A7E00317B78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAE00C31AE66A7E00317B78 /* Main.storyboard */; };
 		9CAE00C71AE66A7E00317B78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CAE00C61AE66A7E00317B78 /* Images.xcassets */; };
 		9CAE00CA1AE66A7E00317B78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CAE00C81AE66A7E00317B78 /* LaunchScreen.xib */; };
 		9CAE00D61AE66A7E00317B78 /* AlcolatorNEWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE00D51AE66A7E00317B78 /* AlcolatorNEWTests.m */; };
@@ -27,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C9BF5AA1AE69ADF001B816C /* BLCWhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCWhiskeyViewController.h; sourceTree = "<group>"; };
+		9C9BF5AB1AE69ADF001B816C /* BLCWhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCWhiskeyViewController.m; sourceTree = "<group>"; };
+		9C9BF5AD1AE6D787001B816C /* BLCMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCMainMenuViewController.h; sourceTree = "<group>"; };
+		9C9BF5AE1AE6D787001B816C /* BLCMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCMainMenuViewController.m; sourceTree = "<group>"; };
 		9CAE00B61AE66A7E00317B78 /* AlcolatorNEW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcolatorNEW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CAE00BA1AE66A7E00317B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CAE00BB1AE66A7E00317B78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -34,7 +39,6 @@
 		9CAE00BE1AE66A7E00317B78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9CAE00C01AE66A7E00317B78 /* BLCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLCViewController.h; sourceTree = "<group>"; };
 		9CAE00C11AE66A7E00317B78 /* BLCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLCViewController.m; sourceTree = "<group>"; };
-		9CAE00C41AE66A7E00317B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CAE00C61AE66A7E00317B78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9CAE00C91AE66A7E00317B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9CAE00CF1AE66A7E00317B78 /* AlcolatorNEWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcolatorNEWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,8 +88,11 @@
 				9CAE00BD1AE66A7E00317B78 /* AppDelegate.h */,
 				9CAE00BE1AE66A7E00317B78 /* AppDelegate.m */,
 				9CAE00C01AE66A7E00317B78 /* BLCViewController.h */,
+				9C9BF5AD1AE6D787001B816C /* BLCMainMenuViewController.h */,
+				9C9BF5AE1AE6D787001B816C /* BLCMainMenuViewController.m */,
+				9C9BF5AA1AE69ADF001B816C /* BLCWhiskeyViewController.h */,
+				9C9BF5AB1AE69ADF001B816C /* BLCWhiskeyViewController.m */,
 				9CAE00C11AE66A7E00317B78 /* BLCViewController.m */,
-				9CAE00C31AE66A7E00317B78 /* Main.storyboard */,
 				9CAE00C61AE66A7E00317B78 /* Images.xcassets */,
 				9CAE00C81AE66A7E00317B78 /* LaunchScreen.xib */,
 				9CAE00B91AE66A7E00317B78 /* Supporting Files */,
@@ -199,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CAE00C51AE66A7E00317B78 /* Main.storyboard in Resources */,
 				9CAE00CA1AE66A7E00317B78 /* LaunchScreen.xib in Resources */,
 				9CAE00C71AE66A7E00317B78 /* Images.xcassets in Resources */,
 			);
@@ -220,6 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CAE00C21AE66A7E00317B78 /* BLCViewController.m in Sources */,
+				9C9BF5AF1AE6D787001B816C /* BLCMainMenuViewController.m in Sources */,
+				9C9BF5AC1AE69ADF001B816C /* BLCWhiskeyViewController.m in Sources */,
 				9CAE00BF1AE66A7E00317B78 /* AppDelegate.m in Sources */,
 				9CAE00BC1AE66A7E00317B78 /* main.m in Sources */,
 			);
@@ -244,14 +252,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9CAE00C31AE66A7E00317B78 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9CAE00C41AE66A7E00317B78 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9CAE00C81AE66A7E00317B78 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -346,6 +346,7 @@
 				INFOPLIST_FILE = AlcolatorNEW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -356,6 +357,7 @@
 				INFOPLIST_FILE = AlcolatorNEW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -412,6 +414,7 @@
 				9CAE00DB1AE66A7E00317B78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CAE00DC1AE66A7E00317B78 /* Build configuration list for PBXNativeTarget "AlcolatorNEWTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +423,7 @@
 				9CAE00DE1AE66A7E00317B78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
