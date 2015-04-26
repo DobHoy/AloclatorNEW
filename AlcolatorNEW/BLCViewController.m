@@ -102,7 +102,7 @@
     
     //[self.beerPercentTextField resignFirstResponder];
 
-     
+    
      
      //oddly this checkpoint hasn't mentioned the beerPercentTextField, so I've hardcoded the
      //value of 5%
