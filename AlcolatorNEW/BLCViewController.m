@@ -17,6 +17,18 @@
 
 @implementation BLCViewController
 
+- (instancetype) init{
+    self = [super init];
+    
+    if(self) {
+        self.title = NSLocalizedString(@"Wine", @"Wine");
+    }
+    
+    [self.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -18)];
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
@@ -47,7 +59,8 @@
     // Gets rid of the maximum number of lines on the label
     self.resultLabel.numberOfLines = 0;
     
-    self.title = NSLocalizedString(@"Wine", @"wine");
+    self.view.backgroundColor = [UIColor colorWithRed:0.741 green:0.925 blue:0.714 alpha:1];
+    
 }
 - (void)loadView {
     // Allocate and initialize the all-encompassing view
@@ -91,11 +104,31 @@
 }
 
  - (void)sliderValueDidChange:(UISlider *)sender {
-    NSLog(@"Slider value changed to %f", sender.value);
-//     float beerGlasses = sender.value;
-     self.title = [NSString stringWithFormat:@"%@ (%f glasses)", self.title,sender.value];
+     
+     NSString *newtitle = @"";
+     NSString *mytitle = self.title;
+     NSUInteger glassesDrank = sender.value;
+     NSString *glassString = [NSString stringWithFormat:@"%d",glassesDrank];
+     
+     NSRange glassesRange = [mytitle rangeOfString:@"glasses"];
+     
+     if(glassesRange.location != NSNotFound) {
+         glassesRange.location -=2;
+         glassesRange.length = 1;
+          newtitle = [mytitle stringByReplacingCharactersInRange:glassesRange withString:glassString];
+         NSLog(@"new titile is %@", newtitle);
+     }
+     else {
+         newtitle = [NSString stringWithFormat:@"%@ 1 glasses",self.title];
+         NSLog(@"new titile is %@", newtitle);
+     }
+    
+     NSLog(@"Slider value changed to %d", glassesDrank);
+
+    self.title = newtitle;
      
     [self.beerPercentTextField resignFirstResponder];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",  glassesDrank]];
 }
 
  - (void)buttonPressed:(UIButton *)sender {
