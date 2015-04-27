@@ -104,12 +104,31 @@
 }
 
  - (void)sliderValueDidChange:(UISlider *)sender {
-    NSLog(@"Slider value changed to %f", sender.value);
-//     float beerGlasses = sender.value;
-     self.title = [NSString stringWithFormat:@"%@ (%f glasses)", self.title,sender.value];
+     
+     NSString *newtitle = @"";
+     NSString *mytitle = self.title;
+     NSUInteger glassesDrank = sender.value;
+     NSString *glassString = [NSString stringWithFormat:@"%d",glassesDrank];
+     
+     NSRange glassesRange = [mytitle rangeOfString:@"glasses"];
+     
+     if(glassesRange.location != NSNotFound) {
+         glassesRange.location -=2;
+         glassesRange.length = 1;
+          newtitle = [mytitle stringByReplacingCharactersInRange:glassesRange withString:glassString];
+         NSLog(@"new titile is %@", newtitle);
+     }
+     else {
+         newtitle = [NSString stringWithFormat:@"%@ 1 glasses",self.title];
+         NSLog(@"new titile is %@", newtitle);
+     }
+    
+     NSLog(@"Slider value changed to %d", glassesDrank);
+
+    self.title = newtitle;
      
     [self.beerPercentTextField resignFirstResponder];
-     [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",  glassesDrank]];
 }
 
  - (void)buttonPressed:(UIButton *)sender {
