@@ -36,7 +36,6 @@
 
 - (void) tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
     
-//    NSString *title = viewController.title;
     NSLog([NSString stringWithFormat:@"New View controller selected:[%@]",viewController.title]);
     
 }

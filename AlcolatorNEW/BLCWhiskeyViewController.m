@@ -24,13 +24,12 @@
 
 - (void)buttonPressed:(UIButton *)sender;
 {
-//    [self.beerPercentTextField resignFirstResponder];
+    [self.beerPercentTextField resignFirstResponder];
     
     int numberOfBeers = self.beerCountSlider.value;
     int ouncesInOneBeerGlass = 12;  //assume they are 12oz beer bottles
-    
-//    float alcoholPercentageOfBeer = [self.beerPercentTextField.text floatValue] / 100;
-    float alcoholPercentageOfBeer = 0.05;
+
+    float alcoholPercentageOfBeer = ( [self.beerPercentTextField.text floatValue]/100 );
     float ouncesOfAlcoholPerBeer = ouncesInOneBeerGlass * alcoholPercentageOfBeer;
     float ouncesOfAlcoholTotal = ouncesOfAlcoholPerBeer * numberOfBeers;
     

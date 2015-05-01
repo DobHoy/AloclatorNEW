@@ -108,7 +108,7 @@
      NSString *newtitle = @"";
      NSString *mytitle = self.title;
      NSUInteger glassesDrank = sender.value;
-     NSString *glassString = [NSString stringWithFormat:@"%d",glassesDrank];
+     NSString *glassString = [NSString stringWithFormat:@"%lu",(unsigned long)glassesDrank];
      
      NSRange glassesRange = [mytitle rangeOfString:@"glasses"];
      
@@ -123,17 +123,17 @@
          NSLog(@"new titile is %@", newtitle);
      }
     
-     NSLog(@"Slider value changed to %d", glassesDrank);
+     NSLog(@"Slider value changed to %lu", (unsigned long)glassesDrank);
 
     self.title = newtitle;
      
     [self.beerPercentTextField resignFirstResponder];
-    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",  glassesDrank]];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%lu",  (unsigned long)glassesDrank]];
 }
 
  - (void)buttonPressed:(UIButton *)sender {
     
-    //[self.beerPercentTextField resignFirstResponder];
+    [self.beerPercentTextField resignFirstResponder];
 
     
      
@@ -145,8 +145,7 @@
     int numberOfBeers = self.beerCountSlider.value;
     int ouncesInOneBeerGlass = 12;  //assume they are 12oz beer bottles
     
-//    float alcoholPercentageOfBeer = [self.beerPercentTextField.text floatValue] / 100;
-    float alcoholPercentageOfBeer = 0.05;
+    float alcoholPercentageOfBeer = ( [self.beerPercentTextField.text floatValue] / 100 );
     float ouncesOfAlcoholPerBeer = ouncesInOneBeerGlass * alcoholPercentageOfBeer;
     float ouncesOfAlcoholTotal = ouncesOfAlcoholPerBeer * numberOfBeers;
     
@@ -157,9 +156,7 @@
     
     float ouncesOfAlcoholPerWineGlass = ouncesInOneWineGlass * alcoholPercentageOfWine;
     float numberOfWineGlassesForEquivalentAlcoholAmount = ouncesOfAlcoholTotal / ouncesOfAlcoholPerWineGlass;
-     
-     
-    
+  
     // decide whether to use "beer"/"beers" and "glass"/"glasses"
     
     NSString *beerText;
